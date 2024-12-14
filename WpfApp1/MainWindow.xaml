@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Slot Machine" Height="400" Width="300">
+    <Grid>
+        <!-- スロット表示 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel x:Name="Slot1" Width="70" Height="150" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock x:Name="Slot1Top" Text="-" FontSize="18" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="Slot1Middle" Text="-" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="Slot1Bottom" Text="-" FontSize="18" HorizontalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel x:Name="Slot2" Width="70" Height="150" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock x:Name="Slot2Top" Text="-" FontSize="18" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="Slot2Middle" Text="-" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="Slot2Bottom" Text="-" FontSize="18" HorizontalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel x:Name="Slot3" Width="70" Height="150" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock x:Name="Slot3Top" Text="-" FontSize="18" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="Slot3Middle" Text="-" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="Slot3Bottom" Text="-" FontSize="18" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- ボタン -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20">
+            <Button x:Name="StartButton" Content="Start" Click="StartButton_Click" Width="80" Margin="5"/>
+            <Button x:Name="StopButton" Content="Stop" Click="StopButton_Click" Width="80" Margin="5" IsEnabled="False"/>
+        </StackPanel>
+    </Grid>
+</Window>
